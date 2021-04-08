@@ -16,7 +16,7 @@ function filterTodos(todos, visibility) {
 }
 
 const mapStoreToProps = state => ({
-  todos: filterTodos(state.todos, state.visibilityFilter)
+  todos: filterTodos(state.todos, state.visibleFilter)
 })
 
 const mapDispatchToProps = dispatch => ({
